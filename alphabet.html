@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+<h1>события</h1>
+
+<div class="blok">
+
+
+</div>
+
+
+<script>
+
+const alphabet = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя';
+
+const randomIndex = Math.floor(Math.random() * alphabet.length);
+const randomLetter = alphabet[randomIndex];
+const res = alphabet.substring(randomIndex,randomIndex+4);
+
+console.log("Случайные буквы: " + res);
+
+//вариант 2
+const fir = Math.floor(Math.random() * alphabet.length);
+const sec = Math.floor(Math.random() * alphabet.length);
+const th = Math.floor(Math.random() * alphabet.length);
+const fo = Math.floor(Math.random() * alphabet.length);
+
+console.log ("Случайные буквы: " + alphabet[fir] + alphabet[sec] + alphabet[th] + alphabet[fo]);
+
+
+
+
+
+
+
+
+
+
+       // var abc = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
+       // var rs = "";
+        //while (rs.length < 4) {
+       //rs += abc[Math.floor(Math.random() * abc.length)];
+        
+        //console.log(rs);
+
+//Шаги для выполнения задания:
+
+//1. Создай переменную `alphabet`, в которой будет храниться строка с алфавитом, 
+//из которых ты будешь генерировать случайное слово.
+
+//2. Используя объект `Math`, создай четыре случайных индекса в диапазоне от 0 до 
+//длины вашей `alphabet`. 
+
+//3. Используя полученные случайные индексы, извлеки соответствующие символы из `alphabet` 
+//и объедини их в строку, чтобы сформировать случайное слово.
+
+//4. Выведи полученное случайное слово на экран, чтобы проверить результат. 
+
+</script>
+
+</body>
+</html>
